@@ -16,7 +16,7 @@ var don = h('div', {id: "don"},
 
 var hil = h('div', {id: "hil"}, [
   h('h1.d', 'Hillary Clinton'),
-  getTweets(),
+  // getTweets(),
   h('img', {src: 'images/hilary.png'}),
   // h('button', {onclick: getTweets}, 'Click for tweet')
 ]
