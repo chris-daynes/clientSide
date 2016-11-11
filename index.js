@@ -14,7 +14,7 @@ var don = h('div', {id: "don"},
   setInterval(function() {
     getTweets()
     fuckOff()
-  }, 500),
+  }, 6000),
 
   h('img', {src: 'images/trump.png'})
 

@@ -15,6 +15,7 @@ request.get(endpoint)
     var trump = true
     var hillary = true
     for (var i = 0; i < tweetsArray; i++) {
+      var i = Math.floor(Math.random() * tweetsArray)
       var tweetInfo = tweetData.body.tweets[i]
       var things = renderTweets(tweetInfo)
 
