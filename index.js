@@ -1,6 +1,8 @@
 var h = require('hyperscript')
 var request = require('superagent')
 var {getTweets} = require('./getTweets')
+var fuckOff = require('./fuckOff')
+
 var endpoint = 'https://election-tweets-dev.herokuapp.com/api/v1/tweets'
 
  var main = document.querySelector('main')
@@ -9,7 +11,11 @@ console.log('welcome to election_tweets')
 var don = h('div', {id: "don"},
 
   h('h1.r', 'Donald Trump'),
-  getTweets(),
+  setInterval(function() {
+    getTweets()
+    fuckOff()
+  }, 6000),
+
   h('img', {src: 'images/trump.png'})
 
 )
