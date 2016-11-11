@@ -9,7 +9,7 @@ compares trump clinton tweets
 
 ```
 git clone https://github.com/JasmineGWT/election_tweets
-cd 
+cd
 npm install
 ```
 
@@ -19,7 +19,7 @@ npm install
 npm start
 ```
 
-browse to <http://localhost:9966/>.
+browse to <https://thepullers.github.io/clientSide/>.
 
 ## test
 
