@@ -1,5 +1,13 @@
 module.exports = function fuckOff () {
-  document.getElementById('donTweets').remove()
-  document.getElementById('hilTweets').remove()
+  var don = document.getElementById('donTweets')
+  console.log('This is the don ',don);
 
+  while(don.firstChild) {
+    don.removeChild(don.firstChild)
+  }
+
+  var hil = document.getElementById('hilTweets')
+  while(hil.firstChild) {
+    hil.removeChild(hil.firstChild)
+  }
 }
