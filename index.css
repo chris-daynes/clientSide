@@ -28,28 +28,33 @@ h1 {
 
 .d {
   color: blue;
+  float: right;
+  padding-right: 19%;
 }
 
 .r {
   color: red;
+  float: left;
+  padding-left: 19%;
 }
 
 #don img {
   float: right;
   width: 20%;
   max-height: auto;
+  padding-top: 20%;
 }
 
 #hil img {
   float: left;
   max-width: 20%;
   max-height: auto;
+  padding-top: 20%;
 }
 
 #hilTweets {
   color: white;
   text-align: center;
-  font-size: 150%;
   width: 70%;
   float: right;
   margin: 5%;
@@ -58,8 +63,53 @@ h1 {
 #donTweets {
   color: white;
   text-align: center;
-  font-size: 150%;
   width: 70%;
-  float: center;
+  float: left;
   margin: 5%;
+}
+
+#tweet {
+  font-size: 260%;
+  text-shadow: 5px 5px 10px grey;
+}
+
+#author {
+  font-size: 140%;
+  text-shadow: 5px 5px 10px grey;
+}
+
+#city {
+  font-size: 120%;
+}
+
+#date {
+  font-size: 120%;
+}
+
+@media (max-width: 981px) {
+
+  #tweet {
+    font-size: 160%;
+    text-shadow: 5px 5px 10px grey;
+  }
+
+  #author {
+    font-size: 80%;
+    text-shadow: 5px 5px 10px grey;
+  }
+
+  #city {
+    font-size: 60%;
+  }
+
+  #date {
+    font-size: 60%;
+  }
+
+  #hil, #don {
+    width: 100%;
+    background: black;
+  }
+
+
 }
