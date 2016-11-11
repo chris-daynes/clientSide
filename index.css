@@ -90,12 +90,10 @@ h1 {
 
   #tweet {
     font-size: 160%;
-    text-shadow: 5px 5px 10px grey;
   }
 
   #author {
     font-size: 80%;
-    text-shadow: 5px 5px 10px grey;
   }
 
   #city {
@@ -108,7 +106,30 @@ h1 {
 
   #hil, #don {
     width: 100%;
-    background: black;
+  }
+
+}
+
+@media (max-width: 1100px) {
+
+  #tweet {
+    font-size: 200%;
+  }
+
+  #author {
+    font-size: 120%;
+  }
+
+  #city {
+    font-size: 100%;
+  }
+
+  #date {
+    font-size: 80%;
+  }
+
+  #hil, #don {
+    width: 100%;
   }
 
 
