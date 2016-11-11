@@ -3,6 +3,7 @@ module.exports = function fuckOff () {
   console.log('This is the don ',don);
 
   while(don.firstChild) {
+    console.log('this is the firstChild ', don.firstChild)
     don.removeChild(don.firstChild)
   }
 
