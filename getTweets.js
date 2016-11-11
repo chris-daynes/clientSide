@@ -18,13 +18,18 @@ request.get(endpoint)
       var tweetInfo = tweetData.body.tweets[i]
       var things = renderTweets(tweetInfo)
 
-
-      if (tweetInfo.subject === "Trump" && trump === true) {
+      console.log('This is the subject ',tweetInfo.subject);
+      if (tweetInfo.subject === "trump" && trump === true) {
         document.getElementById('don').appendChild(things)
         trump = false
-      } else if (tweetInfo.subject === "Clinton" && hillary === true){
+      } else if (tweetInfo.subject === "hillary" && hillary === true){
         document.getElementById('hil').appendChild(things)
         hillary = false
+      } else if  (trump === false && hillary === false) {
+        return
+      } else {
+        continue
+
       }
     }
   })

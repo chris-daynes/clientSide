@@ -1,16 +1,12 @@
 var h = require('hyperscript')
 
 module.exports = function renderTweets(tweetInfo) {
-  console.log("THIS IS TWEET OBJECT", tweetInfo);
   var author = tweetInfo.author
   var tweet = tweetInfo.text
   var city = tweetInfo.city
   var date = tweetInfo.date
   var subject = tweetInfo.subject
-  console.log("THIS IS THE SUBJECT", subject)
-  console.log("THIS IS THE DATE", date);
-  // console.log('This is the tweet ', tweet);
-  if (subject === "Trump") {
+  if (subject === "trump") {
     return h('div', {id: 'donTweets'}, [
       h('p', {id: 'tweet'}, '"', tweet, '"'),
       h('p', {id: 'author'}, '- ', author),
